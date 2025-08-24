@@ -16,7 +16,7 @@ export default function App() {
                </section>
 
             <section>
-                <h2>Hi I am Sami</h2>
+                <h2>Hi Im Sami</h2>
                 <p>
                     I am computer-science student who is currently enrolled at University
                     College Lillebaelt in Denmark. My main interests are web development,
@@ -78,7 +78,7 @@ export default function App() {
                                 rel="noopener noreferrer"
                                 className="btn btn-success"
                             >
-                                Live Demo
+                                Live Website
                             </a>
                         </div>
                     </li>
