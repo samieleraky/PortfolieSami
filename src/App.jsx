@@ -65,7 +65,7 @@ export default function App() {
                         <p>My personal portfolio made with React</p>
                         <div className="project-links">
                             <a
-                                href="https://github.com/samieleraky/MinPortfolio"
+                                href="https://github.com/samieleraky/PortfolieSami"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn btn-primary"
@@ -73,7 +73,7 @@ export default function App() {
                                 View Source Code
                             </a>
                             <a
-                                href="https://your-portfolio-link.com"
+                                href="https://samieleraky.github.io/PortfolieSami/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn btn-success"
