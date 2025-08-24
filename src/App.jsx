@@ -1,11 +1,45 @@
 import "./App.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function App() {
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        // Check if user has a dark mode preference saved
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        setDarkMode(isDarkMode);
+
+        // Alternatively, check for system preference
+        // const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // setDarkMode(prefersDark);
+    }, []);
+
+    useEffect(() => {
+        // Update the class on document body
+        if (darkMode) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'true');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'false');
+        }
+    }, [darkMode]);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
     return (
         <main style={{ maxWidth: 900, margin: "0 auto", padding: "2rem" }}>
-            <header>
+            <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <h1>Portfolio</h1>
+                <button
+                    onClick={toggleDarkMode}
+                    className="theme-toggle"
+                    aria-label="Toggle dark mode"
+                >
+                    {darkMode ? "\u2600\uFE0F" : "\u{1F319}"}
+                </button>
             </header>
             <section className="intro">
                 <img
@@ -18,7 +52,7 @@ export default function App() {
             <section>
                 <h2>Hi Im Sami</h2>
                 <p>
-                    I am computer-science student who is currently enrolled at University
+                    I am a computer-science student who is currently enrolled at the University
                     College Lillebaelt in Denmark. My main interests are web development,
                     frontend development and databases. I have a background in professional
                     basketball which has taught me the value of discipline, strategy and
