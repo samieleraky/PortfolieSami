@@ -153,3 +153,20 @@ a {
     .theme-toggle:hover {
         background-color: rgba(128, 128, 128, 0.2);
     }
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+    nav ul li a:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+body.dark-mode nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
