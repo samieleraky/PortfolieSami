@@ -2,26 +2,26 @@
 
 const weeks = [
     {
-        title: "Uge 33",
-        goals: "At få et overblik over semestret, vores projekt og mine valgfag",
+        title: "Week 33",
+        goals: "To get an overview of the semester, our project, and my selective courses ",
         reflection:
-            "Første uge gik mest med praktisk information. Jeg troede at jeg ville fortsætte med at arbejde videre med samme gruppe som sidst, men desværre blev vi nødsaget til at splitte gruppen op. Vores undervisere var gode til at finde os en ny gruppe og heldigvis var vi hurtige til at få valgt et projekt",
+            "The first week was mostly spent on practical information. We are a completely new group so we have to learn each other better and our ways of working. Luckily we were quick at choosing our project for the semester .",
         resources: ""
     },
     {
-        title: "Uge 34",
-        goals: "Sætte mig ind i projektet, og påbegynde React",
+        title: "Week 34",
+        goals: "Familiarize myself with the project and begin React",
         reflection:
-            "Vi mødtes i produkt- og guildgrupperne, hvilket har givet god sparring. Det meste af tiden er blevet brugt på at påbegynde porteføljen samt dykke ned i vores projektbeskrivelse. Jeg har valgt at påbegynde et React-kursus mens jeg løbende udvikler min portefølje i React",
+            "We met in the product and guild groups, which provided valuable feedback. The majority of the time has been spent on starting the portfolio and diving into our project description. I have chosen to start a React course while continuously developing my portfolio in React.",
         resources:
-            "React – YouTube om React samt hvordan man opstiller routing og pages"
+            "React – YouTube on React and how to implement pages and routing"
     },
     {
-        title: "Uge 35",
-        goals: "At opsætte en plan for vores projekt, fokus på routing mellem pages i React, samt arbejde videre portefølje",
+        title: "week 35",
+        goals: "Setting up a plan for our project, focusing on routing between pages in React, and continuing work on the portfolio.",
         reflection:
-            "Det lykkedes mig at opsætte routing imellem mine forskellige sider i React. Vores Procesvejledning har givet god sparring da vi fik indblik i hinandens porteføljer samt feedback fra undervisere og medstuderende. En vigtig pointe var at komme godt igang med ens blog/refleksioner",
-        resources: "React – fokus på routing"
+            "I managed to set up routing between my different pages in React. Our process guide provided valuable feedback as we gained insight into each other's portfolios and received feedback from teachers and fellow students. An important point was to get off to a good start with your blog/reflections.",
+        resources: "React – focus on routing and describing our reflections on our blog "
     }
 ];
 
