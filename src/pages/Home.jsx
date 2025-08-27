@@ -1,8 +1,11 @@
+import React from 'react';
+import SamiPhoto from '../assets/Sami.jpg'; // Make sure to have the image in the specified path
+
 export const Home = () => {
     return (
         <section>
             <section className="intro">
-                <img src="/Sami.jpg" alt="Sami" className="profile-photo" />
+                <img src={SamiPhoto} alt="Sami" className="profile-photo" />
             </section>
 
             <section>
@@ -20,60 +23,6 @@ export const Home = () => {
                 </p>
             </section>
 
-            <section>
-                <h2>Projects</h2>
-                <ul className="projects-list">
-                    <li className="project-item">
-                        <h3>Gotorz</h3>
-                        <p>
-                            A travel agency website made with Blazor which uses APIs to search
-                            for hotel and flight options. Users are redirected to Stripe
-                            payment using Stripe API.
-                        </p>
-                        <div className="project-links">
-                            <a
-                                href="https://github.com/Team13-UCL/GoTorz"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary"
-                            >
-                                View Source Code
-                            </a>
-                            <a
-                                href="https://gotorzz-hhchfbhabzaae6dr.swedencentral-01.azurewebsites.net/Login"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-success"
-                            >
-                                Live Website
-                            </a>
-                        </div>
-                    </li>
-
-                    <li className="project-item">
-                        <h3>Portfolio</h3>
-                        <p>My personal portfolio made with React</p>
-                        <div className="project-links">
-                            <a
-                                href="https://github.com/samieleraky/PortfolieSami"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary"
-                            >
-                                View Source Code
-                            </a>
-                            <a
-                                href="https://samieleraky.github.io/PortfolieSami/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-success"
-                            >
-                                Live Website
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
 
             <section>
                 <h2>Contact</h2>

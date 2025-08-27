@@ -34,7 +34,7 @@ export const Reflections = () => {
 
     return (
         <section className="p-6 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Refleksioner for semestret</h2>
+            <h2 className="text-2xl font-bold mb-4">Reflections during the semester</h2>
 
             <div className="space-y-4">
                 {weeks.map((week, index) => (
@@ -52,13 +52,13 @@ export const Reflections = () => {
 
                         {openIndex === index && (
                             <div className="p-4 border-t space-y-3 text-gray-700">
-                                <p className="font-bold">Mål</p>
+                                <p className="font-bold">Goals</p>
                                 <p>{week.goals}</p>
 
-                                <p className="font-semibold">Ugen der gik</p>
+                                <p className="font-semibold">The week that passed</p>
                                 <p>{week.reflection}</p>
 
-                                <p className="font-semibold">Ressourcer</p>
+                                <p className="font-semibold">Resources</p>
                                 <p>{week.resources}</p>
                             </div>
                         )}

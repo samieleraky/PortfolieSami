@@ -4,6 +4,7 @@ import { Process } from "./pages/Process";
 import { LearningObjectives } from "./pages/LearningObjectives";
 import { Resources } from "./pages/Resources";
 import { Home } from "./pages/Home";
+import { Projects } from "./pages/Projects";
 
 export const AppRoutes = () => {
     return (
@@ -14,6 +15,7 @@ export const AppRoutes = () => {
                 <Link to="/Process" style={{ marginRight: "1rem" }}>Process</Link>
                 <Link to="/LearningObjectives" style={{ marginRight: "1rem" }}>Objectives</Link>
                 <Link to="/Resources">Resources</Link>
+                <Link to="/Projects" style={{ marginLeft: "1rem" }}>Projects</Link>
             </nav>
 
             <Routes>
@@ -22,6 +24,7 @@ export const AppRoutes = () => {
                 <Route path="/Process" element={<Process />} />
                 <Route path="/LearningObjectives" element={<LearningObjectives />} />
                 <Route path="/Resources" element={<Resources />} />
+                <Route path="/Projects" element={<Projects />} /> // Add this line for the Projects page
             </Routes>
         </>
     );
