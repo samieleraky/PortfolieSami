@@ -1,0 +1,201 @@
+/* Home.css */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text-color, #333); /* Dark mode support */
+}
+
+/* Hero Section */
+.hero-section {
+    margin-bottom: 4rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+    .profile-photo:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    }
+
+.text-content {
+    flex: 2;
+    min-width: 300px;
+    text-align: left; /* Moves all text to the left */
+}
+
+    .text-content h2 {
+        text-align: left; /* Specifically moves the heading to the right */
+        margin-left: 0; /* removes the auto margin */
+        color: var(--heading-color, #2c3e50); /* Dark mode support */
+    }
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: var(--text-color, #333); /* Dark mode support */
+    margin: 0;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 4rem;
+    color: var(--text-color, #333);
+}
+
+    .skills-section h2 {
+        text-align: center;
+        margin-bottom: 2.5rem;
+        color: var(--heading-color, #2c3e50);
+        font-size: 2.2rem;
+    }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: var(--card-bg, linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%));
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color, #dee2e6);
+    color: var(--text-color, #333);
+}
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        background: var(--card-hover-bg, linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%));
+    }
+
+    .skill-card i {
+        font-size: 2.5rem;
+        color: var(--icon-color, #007bff);
+        margin-bottom: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    .skill-card:hover i {
+        color: var(--icon-hover-color, #0056b3);
+    }
+
+    .skill-card h3 {
+        color: var(--heading-color, #2c3e50);
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .skill-card p {
+        color: var(--text-color, #666);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .skills-section h2 {
+        color: #ffffff;
+    }
+
+    .skill-card {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+        border: 1px solid #4a5568;
+        color: #ffffff;
+    }
+
+        .skill-card:hover {
+            background: linear-gradient(135deg, #3c3664 0%, #6d28d9 100%);
+        }
+
+        .skill-card h3 {
+            color: #ffffff;
+        }
+
+        .skill-card p {
+            color: #e2e8f0;
+        }
+
+        .skill-card i {
+            color: #63b3ed;
+        }
+
+        .skill-card:hover i {
+            color: #4299e1;
+        }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+        .text-content h2 {
+            text-align: center;
+            margin-left: 0;
+        }
+
+    .intro-text {
+        text-align: left;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo {
+        max-width: 250px;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+}

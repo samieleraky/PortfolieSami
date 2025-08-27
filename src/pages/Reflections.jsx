@@ -52,13 +52,13 @@ export const Reflections = () => {
 
                         {openIndex === index && (
                             <div className="p-4 border-t space-y-3 text-gray-700">
-                                <p className="font-bold">Goals</p>
+                                <p className="font-bold">Goals:</p>
                                 <p>{week.goals}</p>
 
-                                <p className="font-semibold">The week that passed</p>
+                                <p className="font-semibold">The week that passed:</p>
                                 <p>{week.reflection}</p>
 
-                                <p className="font-semibold">Resources</p>
+                                <p className="font-semibold">Resources:</p>
                                 <p>{week.resources}</p>
                             </div>
                         )}
