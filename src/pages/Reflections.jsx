@@ -24,9 +24,9 @@ const weeks = [
         title: "week 35",
         goals: "Setting up a plan for our project, focusing on routing between pages in React, and continuing work on the portfolio.",
         reflection:
-            "I managed to set up routing between my different pages in React. Our process guide provided valuable feedback as we gained insight into each other's portfolios and received feedback from teachers and fellow students. An important point was to get off to a good start with your blog/reflections.",
+            "I managed to set up routing between my different pages in React. Our process meeting provided valuable feedback as we gained insight into each other's portfolios and received feedback from teachers and fellow students. An important point was to get off to a good start with our blog/reflections. In our group we decided that everyone should start researching the tools used for the project",
         resources: "React – focus on routing and describing our reflections on our blog, CodeAcademy course on React ",
-        learning:"Taking a react course on CodeAcademy is is boosting my learning curve. Following a tutorial in React has helped me implement routing in my portfolio and helped me understand how to implement routing for our project"
+        learning:"Taking a react course on CodeAcademy is boosting my learning curve. Following a tutorial in React has helped me implement routing in my portfolio and helped me understand how to implement routing for our project"
     },
     {
         title: "week 36",
