@@ -35,7 +35,17 @@ const weeks = [
             "We have researched the tools we would like to use for our project. I will use React for frontend development and web development. I will use React native for mobile app-development. I gained alot of insigt from our guild meetings in particular on the insight of the other tools used by my classmates. Based on the meeting, I would like to dig further into tailwind for the design and styling. In our group we decided to continue individually on own courses and to begin HLD for our next meeting. We are considering implementing the frontend slowly ",
             resources: "React/React Native in CodeAcademy",
         learning:"Continous course training in Codeacademy and listening to feedback from our meetings are helping me gain more knowledge on how to implement our project. Its helping my learningcurve by providing practical examples and immediate application opportunities for the concepts I'm studying "
-    }
+    },
+    {
+        title: "week 37",
+        goals: "Begin High Level Design (HLD) for our project and continue learning React and start React Native course",
+        reflection:"",
+            resources: "",
+        learning:""
+        
+
+    },
+
 ];
 
 export const Reflections = () => {
