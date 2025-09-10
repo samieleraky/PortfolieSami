@@ -56,7 +56,7 @@ export const Process = () => {
                         <p>
                             In addition to the group's work, I have also focused on developing my
                             own skills during this project. I have enrolled in
-                            Codeacademy where I´m taking a course on React and
+                            Codeacademy where I am taking a course on React and
                             React Native. Both are important technologies for our front-end
                             development and app development. In addition, I will also spend time
                             completing educational videos about Tailwind and tutorials that
@@ -70,8 +70,7 @@ export const Process = () => {
                             src="/images/individual.png"
                             alt="Individuel proces"
                             className="w-40 h-28 object-cover rounded-xl shadow-md mx-auto"
-                        />
-                        <h4 className="mt-2 font-semibold text-gray-700">Min proces</h4>
+                        />                        
                     </div>
                 </div>
             </section>
