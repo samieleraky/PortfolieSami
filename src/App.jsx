@@ -26,7 +26,7 @@ export default function App() {
     };
 
     return (
-        <Router>
+        <Router basename="/PortfolieSami">
             <main style={{ maxWidth: 900, margin: "0 auto", padding: "2rem" }}>
                 <header
                     style={{
